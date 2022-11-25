@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+* body {
+  @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+  margin: 0;
+  background: linear-gradient(90deg, #c84e89 0%, #f15f79 100%);
+  margin-top: 3%;
+  font-family: "Cairo", "Roboto", sans-serif;
+  color: #10182f;
+}
+* body h2 {
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+* body h3 {
+  font-weight: 500;
+  color: rgb(150, 154, 158);
+  margin-bottom: 5%;
+}
+* body button {
+  background-color: #dd5782;
+  color: rgb(246, 237, 237);
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  display: flex;
+  /* width: 1040px; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 3%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card .card-header img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+.card .card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.card .card-body .tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin-bottom: 5%;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+.card .card-body .tag-teal {
+  background-color: #47bcd4;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+  height: 35px;
+}
+
+.bloc-modale {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 5;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+.bloc-modale .modal-header {
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background: linear-gradient(90deg, #c84e89 0%, #f15f79 100%);
+}
+.bloc-modale .modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.bloc-modale .modal-header .btn-modale {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.bloc-modale .modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
