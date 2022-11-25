@@ -3,6 +3,9 @@
 ## Project setup
 ```
 npm install
+npm install sass -D
+npm install sass-loader -D
+npm install axios
 ```
 
 ### Compiles and hot-reloads for development
